@@ -18,10 +18,7 @@ d3.json("data/TidakMenular.json").then(function (data) {
     .domain(data.map((d) => d.cause))
     .padding(0.2);
 
-  const x = d3
-    .scaleLinear()
-    .range([0, width])
-    .domain([0, d3.max(data, (d) => d.totaldeath)]);
+  const x = d3.scaleLinear().range([0, width]).domain([0, 100000000]);
 
   // tambahkan bars ke chart
   svg
