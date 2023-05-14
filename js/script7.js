@@ -17,10 +17,7 @@ d3.json("data/Injury.json").then(function (data) {
     .domain(data.map((d) => d.cause))
     .padding(0.2);
 
-  const x = d3
-    .scaleLinear()
-    .range([0, width])
-    .domain([0, d3.max(data, (d) => d.totaldeath)]);
+  const x = d3.scaleLinear().range([0, width]).domain([0, 100000000]);
 
   // tambahkan bars ke chart
   svg
@@ -64,8 +61,7 @@ d3.json("data/Injury.json").then(function (data) {
     .style("font-size", "13px");
 
   // tambahkan label ke y-axis
-  svg.append("g").call(d3.axisLeft(y))
-  .style("font-size", "13px");
+  svg.append("g").call(d3.axisLeft(y)).style("font-size", "13px");
 
   // Buat tooltip
   const tooltip = d3.select("#myChart").append("div").attr("class", "tooltip");
