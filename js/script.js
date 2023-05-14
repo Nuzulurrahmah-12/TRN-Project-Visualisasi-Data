@@ -1,0 +1,120 @@
+var margin = { top: 60, right: 20, bottom: 120, left: 400 },
+  width = 1200 - margin.left - margin.right,
+  height = 650 - margin.top - margin.bottom;
+
+var svg = d3
+  .select("body")
+  .append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom + 20) // tambahkan margin di bawah
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("data/max.json").then(function (data) {
+  data.forEach(function (dd) {
+    dd.totaldeath = +dd.totaldeath;
+  });
+
+  var x = d3.scaleBand().range([0, width]).padding(0.3);
+
+  var y = d3.scaleLinear().range([height, 0]);
+
+  x.domain(
+    data.map(function (dd) {
+      return dd.country;
+    })
+  );
+  y.domain([
+    0,
+    d3.max(data, function (dd) {
+      return dd.totaldeath / 1000000;
+    }),
+  ]);
+
+  var tooltip = d3.select("body").append("div").attr("class", "tooltip");
+
+  svg
+    .selectAll(".bar")
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("class", "bar")
+    .attr("x", function (dd) {
+      return x(dd.country);
+    })
+    .attr("width", x.bandwidth())
+    .attr("y", function (dd) {
+      return y(dd.totaldeath / 1000000);
+    })
+    .attr("height", function (dd) {
+      return height - y(dd.totaldeath / 1000000);
+    })
+    .on("mouseover", function (event, dd) {
+      tooltip
+        .style("visibility", "visible")
+        .style("left", event.pageX + 10 + "px")
+        .style("top", event.pageY - 10 + "px")
+        .html(
+          "<b>" +
+            dd.country +
+            "</b>" +
+            "<br>" +
+            "<b>Total: </b>" +
+            d3.format(",")(dd.totaldeath) +
+            " deaths"
+        );
+      d3.select(this).style("opacity", 0.5);
+    })
+    .on("mouseout", function (dd) {
+      tooltip.style("visibility", "hidden");
+      d3.select(this).style("opacity", 1);
+    });
+
+  svg
+    .append("text")
+    .attr(
+      "transform",
+      "translate(" + width / 2 + " ," + (height + margin.top + 5) + ")"
+    )
+    .style("text-anchor", "middle")
+    .text("Country")
+    .style("font-size", "18px");
+
+  svg
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 450 - margin.left)
+    .attr("x", 0 - height / 2)
+    .attr("dy", "-100")
+    .style("text-anchor", "middle")
+    .style("text-overflow", "ellipsis")
+    .style("overflow", "hidden")
+    .style("white-space", "nowrap")
+    .text("Number of Death (Billion)");
+
+  svg
+    .append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .style("font-size", "16px");
+
+  svg.append("g").call(d3.axisLeft(y)).style("font-size", "14px");
+
+  var tooltip = d3
+    .select("#d3-container")
+    .append("div")
+    .style("opacity", 10)
+    .attr("class", "tooltip");
+
+  bar
+    .on("mouseover", function (d) {
+      tooltip.transition().duration(100).style("opacity", 0);
+      tooltip
+        .html(d.country + "<br/>" + "Total Deaths: " + d.totaldeath)
+        .style("left", d3.event.pageX + "px")
+        .style("top", d3.event.pageY - 28 + "px");
+    })
+    .on("mouseout", function (d) {
+      tooltip.transition().duration(500).style("opacity", 10);
+    });
+});

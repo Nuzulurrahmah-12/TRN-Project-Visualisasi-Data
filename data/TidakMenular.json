@@ -1,0 +1,54 @@
+[
+    {
+        "cause": "Alzheimer's Disease and Other Dementias",
+        "totaldeath": "29768839"
+    },
+    {
+        "cause": "Parkinson Diseases",
+        "totaldeath": "7179795"
+    },
+    {
+        "cause": "Nutritional Deficiencies",
+        "totaldeath": "13792032"
+    },
+    {
+        "cause": "Cardiovascular Diseases",
+        "totaldeath": "447741982"
+    },
+    {
+        "cause": "Neonatal Disorders",
+        "totaldeath": "76860729"
+    },
+    {
+        "cause": "Alcohol Use Disorders",
+        "totaldeath": "4819018"
+    },
+    {
+        "cause": "Diabetes Melistus",
+        "totaldeath": "31448872"
+    },
+    {
+        "cause": "Chronic Kidney Diseases",
+        "totaldeath": "28911692"
+    },
+    {
+        "cause": "Poisonings",
+        "totaldeath": "2601082"
+    },
+    {
+        "cause": "Protein-Energy Malnutrition",
+        "totaldeath": "12031885"
+    },
+    {
+        "cause": "Chronic Respiratory Diseases",
+        "totaldeath": "104605334"
+    },
+    {
+        "cause": "Cirrhosis and Other Chronic Liver",
+        "totaldeath": "37479321"
+    },
+    {
+        "cause": "Digestive Diseases",
+        "totaldeath": "65638635"
+    }
+]

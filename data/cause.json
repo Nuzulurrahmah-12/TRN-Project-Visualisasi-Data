@@ -1,0 +1,126 @@
+[
+    {
+        "cause": "Meningitis",
+        "totaldeath": "10524572"
+    },
+    {
+        "cause": "Alzheimer's Disease and Other Dementias",
+        "totaldeath": "29768839"
+    },
+    {
+        "cause": "Parkinson's Disease",
+        "totaldeath": "7179795"
+    },
+    {
+        "cause": "Nutritional Deficiencies",
+        "totaldeath": "13792032"
+    },
+    {
+        "cause": "Malaria",
+        "totaldeath": "25342676"
+    },
+    {
+        "cause": "Drowning",
+        "totaldeath": "10301999"
+    },
+    {
+        "cause": "Interpersonal Violence",
+        "totaldeath": "12752839"
+    },
+    {
+        "cause": "Maternal Disorders",
+        "totaldeath": "7727046"
+    },
+    {
+        "cause": "HIV/AIDS",
+        "totaldeath": "36364419"
+    },
+    {
+        "cause": "Drug Use Disorders",
+        "totaldeath": "2656121"
+    },
+    {
+        "cause": "Tuberculosis",
+        "totaldeath": "45850603"
+    },
+    {
+        "cause": "Cardiovascular Diseases",
+        "totaldeath": "447741982"
+    },
+    {
+        "cause": "Lower Respiratory Infections",
+        "totaldeath": "83770038"
+    },
+    {
+        "cause": "Neonatal Disorders",
+        "totaldeath": "76860729"
+    },
+    {
+        "cause": "Alcohol Use Disorders",
+        "totaldeath": "4819018"
+    },
+    {
+        "cause": "Self-harm",
+        "totaldeath": "23713931"
+    },
+    {
+        "cause": "Exposure to Forces of Nature",
+        "totaldeath": "1490132"
+    },
+    {
+        "cause": "Diarrheal Diseases",
+        "totaldeath": "66235508"
+    },
+    {
+        "cause": "Environmental Heat and Cold Exposure",
+        "totaldeath": "1788851"
+    },
+    {
+        "cause": "Neoplasms",
+        "totaldeath": "229758538"
+    },
+    {
+        "cause": "Conflict and Terrorism",
+        "totaldeath": "3294053"
+    },
+    {
+        "cause": "Diabetes Mellitus",
+        "totaldeath": "31448872"
+    },
+    {
+        "cause": "Chronic Kidney Disease",
+        "totaldeath": "28911692"
+    },
+    {
+        "cause": "Poisonings",
+        "totaldeath": "2601082"
+    },
+    {
+        "cause": "Protein-Energy Malnutrition",
+        "totaldeath": "12031885"
+    },
+    {
+        "cause": "Road Injuries",
+        "totaldeath": "36296469"
+    },
+    {
+        "cause": "Chronic Respiratory Diseases",
+        "totaldeath": "104605334"
+    },
+    {
+        "cause": "Cirrhosis and Other Chronic Liver Diseases",
+        "totaldeath": "37479321"
+    },
+    {
+        "cause": "Digestive Diseases",
+        "totaldeath": "65638635"
+    },
+    {
+        "cause": "Fire, Heat, and Hot Substances",
+        "totaldeath": "3602914"
+    },
+    {
+        "cause": "Acute Hepatitis",
+        "totaldeath": "3784791"
+    }
+]

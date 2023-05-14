@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>subb subChart</title>
+    <style>
+        .bar {
+            fill: rgb(68, 144, 186);
+        }
+
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 180px;
+            height: 50px;
+            padding: 2px;
+            margin-top: 2px;
+            border: 1px solid black;
+            font: 10px sans-serif solid black;
+            background: rgb(255, 255, 255);
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div style="text-align: center;">
+            <h3>JUMLAH KEMATIAN BERDASARKAN KATEGORI INJURY DALAM RENTANG TAHUN 1990-2019</h3>
+        </div>
+        <div id="myChart"></div>
+
+        <script src="js/d3.v7.min.js"></script>
+        <script src="js/script7.js"></script>
+    </body>
+
+</html>
