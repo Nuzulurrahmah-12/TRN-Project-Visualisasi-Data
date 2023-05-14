@@ -1,0 +1,46 @@
+[
+    {
+        "cause": "Drowning",
+        "totaldeath": "10301999"
+    },
+    {
+        "cause": "Interpersonal Violence",
+        "totaldeath": "12752839"
+    },
+    {
+        "cause": " Maternal Disorders",
+        "totaldeath": "7727046"
+    },
+    {
+        "cause": "Drug Use Disorders",
+        "totaldeath": "2656121"
+    },
+    {
+        "cause": "Self-harm",
+        "totaldeath": "23713931"
+    },
+    {
+        "cause": "Exposure to Forces of Nature",
+        "totaldeath": "1490132"
+    },
+    {
+        "cause": "Environmental Heat and Cold Exposure",
+        "totaldeath": "1788851"
+    },
+    {
+        "cause": "Neoplasms",
+        "totaldeath": "229758538"
+    },
+    {
+        "cause": "Conflict and Terrorism",
+        "totaldeath": "3294053"
+    },
+    {
+        "cause": "Road Injuries",
+        "totaldeath": "36296469"
+    },
+    {
+        "cause": "Fire, Heat, and Hot Substances",
+        "totaldeath": "3602914"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "Meningitis",
+        "totaldeath": "10524572"
+    },
+    {
+        "cause": "Malaria",
+        "totaldeath": "25342676"
+    },
+    {
+        "cause": "HIV/AIDS",
+        "totaldeath": "36364419"
+    },
+    {
+        "cause": "Tuberculosis",
+        "totaldeath": "45850603"
+    },
+    {
+        "cause": "LRI",
+        "totaldeath": "83770038"
+    },
+    {
+        "cause": "Diarrheal Diseases",
+        "totaldeath": "66235508"
+    },
+    {
+        "cause": "Hepatitis",
+        "totaldeath": "3784791"
+    }
+]

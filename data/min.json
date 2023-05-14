@@ -1,0 +1,52 @@
+[
+    {
+        "country": "Tokelau",
+        "code": "TKL",
+        "totaldeath": 299
+    },
+    {
+        "country": "Niue",
+        "code": "NIU",
+        "totaldeath": 591
+    },
+    {
+        "country": "Nauru",
+        "code": "NRU",
+        "totaldeath": 2249
+    },
+    {
+        "country": "Tuvalu",
+        "code": "TUV",
+        "totaldeath": 2962
+    },
+    {
+        "country": "Cook Islands",
+        "code": "COK",
+        "totaldeath": 3999
+    },
+    {
+        "country": "Palau",
+        "code": "PLW",
+        "totaldeath": 4814
+    },
+    {
+        "country": "San Marino",
+        "code": "SMR",
+        "totaldeath": 6761
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "code": "MNP",
+        "totaldeath": 7827
+    },
+    {
+        "country": "American Samoa",
+        "code": "ASM",
+        "totaldeath": 8619
+    },
+    {
+        "country": "Marshall Islands",
+        "code": "MHL",
+        "totaldeath": 10186
+    }
+]

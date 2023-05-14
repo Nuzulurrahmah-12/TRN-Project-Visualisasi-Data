@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "Penyakit Menular",
+        "totaldeath": "271872607"
+    },
+    {
+        "cause": "Penyakit Tidak Menular",
+        "totaldeath": "862879216"
+    },
+    {
+        "cause": "Injury",
+        "totaldeath": "333382893"
+    }
+]
